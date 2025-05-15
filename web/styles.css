@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #eaf4f8;
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+header {
+  background: #0275d8;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 0.1);
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1.1px;
+  cursor: default;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #fbcf33;
+  outline: none;
+}
+
+main {
+  flex-grow: 1;
+  max-width: 1100px;
+  margin: 30px auto 40px;
+  padding: 0 20px;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #034a97;
+  text-align: center;
+}
+
+.search-area {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.1);
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 20px;
+  justify-content: center;
+}
+
+.search-area label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.search-group {
+  flex: 1 1 200px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-area input[type="text"],
+.search-area select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-area input[type="text"]:focus,
+.search-area select:focus {
+  border-color: #0275d8;
+  outline: none;
+}
+
+button.btn-search {
+  background: #0275d8;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+
+button.btn-search:hover,
+button.btn-search:focus {
+  background: #025aa5;
+  outline: none;
+}
+
+section.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+article.job-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.1);
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+article.job-card h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #034a97;
+  margin-bottom: 8px;
+}
+
+article.job-card .company-location {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+article.job-card p.description {
+  margin-bottom: 14px;
+  color: #333;
+}
+
+article.job-card button.btn-apply {
+  align-self: flex-start;
+  background: #fbcf33;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 9px;
+  font-weight: 700;
+  color: #034a97;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+article.job-card button.btn-apply:hover,
+article.job-card button.btn-apply:focus {
+  background: #e1b82d;
+  outline: none;
+}
+
+section.support-info {
+  background: #d2e8fc;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-top: 40px;
+  color: #034a97;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.05);
+}
+
+section.support-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+section.support-info ul {
+  list-style: disc inside;
+}
+
+section.support-info ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+footer {
+  background: #034a97;
+  color: white;
+  text-align: center;
+  padding: 18px 10px;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+@media (max-width: 700px) {
+  .search-area {
+    justify-content: stretch;
+  }
+}

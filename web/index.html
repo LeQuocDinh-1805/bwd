@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hỗ Trợ Kiếm Việc Làm Cho Người Khuyết Tật</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Việc Làm Hỗ Trợ</div>
+      <nav role="navigation" aria-label="Menu chính">
+        <a href="#job-list" tabindex="0">Việc Làm</a>
+        <a href="#support" tabindex="0">Hỗ Trợ</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Tìm việc làm phù hợp cho người khuyết tật</h1>
+      <section class="search-area" aria-label="Tìm kiếm việc làm">
+        <div class="search-group">
+          <label for="search-keyword">Từ khóa</label>
+          <input
+            type="text"
+            id="search-keyword"
+            placeholder="Nhập từ khóa công việc, ví dụ 'hành chính'"
+            aria-label="Từ khóa tìm kiếm"
+          />
+        </div>
+        <div class="search-group">
+          <label for="search-field">Lĩnh vực</label>
+          <select id="search-field" aria-label="Lĩnh vực công việc">
+            <option value="">Tất cả</option>
+            <option value="hành chính">Hành chính</option>
+            <option value="sản xuất">Sản xuất</option>
+            <option value="bán hàng">Bán hàng</option>
+            <option value="công nghệ">Công nghệ</option>
+            <option value="giáo dục">Giáo dục</option>
+          </select>
+        </div>
+        <div class="search-group">
+          <label for="search-location">Khu vực</label>
+          <select id="search-location" aria-label="Khu vực làm việc">
+            <option value="">Tất cả</option>
+            <option value="hà nội">Hà Nội</option>
+            <option value="hồ chí minh">Hồ Chí Minh</option>
+            <option value="đà nẵng">Đà Nẵng</option>
+            <option value="cần thơ">Cần Thơ</option>
+          </select>
+        </div>
+        <button
+          class="btn-search"
+          id="btn-search"
+          aria-label="Tìm kiếm việc làm"
+        >
+          Tìm kiếm
+        </button>
+      </section>
+
+      <section
+        class="job-list"
+        id="job-list"
+        aria-live="polite"
+        aria-relevant="all"
+      >
+        <!-- Việc làm sẽ hiển thị ở đây -->
+      </section>
+
+      <section
+        class="support-info"
+        id="support"
+        tabindex="0"
+        aria-label="Thông tin hỗ trợ và tư vấn cho người khuyết tật"
+      >
+        <h3>Hỗ trợ dành cho người khuyết tật</h3>
+        <ul>
+          <li>Thông tin tư vấn nghề nghiệp phù hợp</li>
+          <li>Hỗ trợ đào tạo kỹ năng và nâng cao nghề nghiệp</li>
+          <li>
+            Kết nối với các công ty, doanh nghiệp tạo điều kiện tuyển dụng
+          </li>
+          <li>Phân bổ công việc phù hợp khả năng và điều kiện sức khoẻ</li>
+          <li>Tư vấn pháp lý và các chính sách ưu đãi</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2024 Việc Làm Hỗ Trợ - Trang tìm việc cho người khuyết tật
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
